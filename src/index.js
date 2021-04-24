@@ -3,9 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import {Posts} from './components/Posts'
+import {Header} from './components/Header'
 
 ReactDOM.render(
   <React.StrictMode>
+    <Header />
     <Posts />
   </React.StrictMode>,
   document.getElementById('root')
