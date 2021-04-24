@@ -1,13 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {Post} from './components/Post'
+import {Posts} from './components/Posts'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Post />
+    <Posts />
   </React.StrictMode>,
   document.getElementById('root')
 );

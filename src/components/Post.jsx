@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Header } from "./header";
+// import { Header } from "./header";
 
 export function Post({ id }) {
   const [post, setPost] = useState({
@@ -7,7 +7,7 @@ export function Post({ id }) {
     body: "",
   });
   useEffect(() => {
-    fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
+    fetch(`https://jsonplaceholder.typicode.com/posts/1`)
       .then((response) => response.json())
       .then((post) => {
         setPost({ post });
@@ -16,7 +16,6 @@ export function Post({ id }) {
 
   return (
     <div>
-      <Header />
 
       <div className="container">
         <p>{post.title}</p>
