@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {Header} from './components/Header'
+import {Post} from './components/Post'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Header />
+    <Post />
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,7 +1,9 @@
-import {useState} from "react"
-import { usePosts } from "./hooks/usePosts";
+import { useEffect, useState } from "react";
+import { usePosts } from "./hooks/userPosts";
 
-
+// function getUserPosts(){
+//     console.log("hello")
+// }
 
 export function Header({ user_id, getUserPosts }){
     const { getUserPosts } = usePosts([

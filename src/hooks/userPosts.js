@@ -1,26 +1,27 @@
 import { useCallback, useEffect, useState } from "react";
 
-export function usePosts(initialPosts) {
+export function userPosts(initialPosts) {
   let [posts, setPosts] = useState(initialPosts);
 
 
   const getUserPosts = useCallback(
-    (post) =>
-      setPosts(posts.filter(({ user_id }) => user_id === post.user_id))
-    [posts, setPosts]
+    // fetch('https://jsonplaceholder.typicode.com/posts?userId=1')
+    // .then((response) => response.json())
+    // .then((json) => console.log(json)) 
+    console.log("hello")
     
   );
 
 
-//   useEffect(() => {
-//     setLoading(true);
-//     fetch("https://jsonplaceholder.typicode.com/todos")
-//       .then((res) => res.json())
-//       .then((data) => {
-//         setTodos(data);
-//         setLoading(false);
-//       });
-//   }, [setTodos, setLoading]);
+  // useEffect(() => {
+  //   setLoading(true);
+  //   fetch("https://jsonplaceholder.typicode.com/posts?userId=1")
+  //     .then((response) => response.json())
+  //     .then((data) => {
+  //       setTodos(data);
+  //       setLoading(false);
+  //     });
+  // }, [setTodos, setLoading]);
 
   return {
     posts,
