@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {Auth} from './components/Auth';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import App from './App'
-import 'bootstrap/dist/css/bootstrap.min.css'; 
+import 'bootstrap/dist/css/bootstrap.css'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Auth/>
   </React.StrictMode>,
   document.getElementById('root')
 );
