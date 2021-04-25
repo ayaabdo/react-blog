@@ -39,7 +39,7 @@ export function Header() {
                 Logout
               </Link>
             </li>
-            <li>  
+            <li className="username">  
             <p>{currentUser.name}</p>     
             </li>
           </ul>
