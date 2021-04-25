@@ -3,6 +3,9 @@ import {useState } from "react"
 import {Post} from "./components/Post"
 import {Header} from "./components/Header"
 import {Comment} from "./components/Comment"
+import {Nav} from "./components/Nav"
+import { Router, Link } from "@reach/router"
+
 
 
 
@@ -31,6 +34,8 @@ function App() {
   // const handleShowComments
 
   return (
+    <>
+    <Nav />
     <div className="App">
       <h1>User Posts</h1>
       <Header handlePostList = {handlePostList} />
@@ -48,6 +53,7 @@ function App() {
 
 
     </div>
+   </>
   );
 }
 
