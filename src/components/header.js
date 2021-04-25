@@ -1,5 +1,12 @@
 import { Link } from "@reach/router";
+import { UserContext } from "./UserContext";
+import { useContext } from "react";
+
+
+
 export function Header() {
+  const currentUser = useContext(UserContext).currentUser;
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
@@ -20,11 +27,7 @@ export function Header() {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav">
-            <li className="nav-item">
-              <Link className="nav-link active" to="/profile">
-                Profile
-              </Link>
-            </li>
+        
             <li className="nav-item">
               <Link className="nav-link" to="/createPost">
                 New Post
@@ -35,6 +38,9 @@ export function Header() {
               <Link className="nav-link" to="/login">
                 Logout
               </Link>
+            </li>
+            <li>  
+            <p>{currentUser.name}</p>     
             </li>
           </ul>
         </div>
